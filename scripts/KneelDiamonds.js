@@ -9,6 +9,10 @@ document.addEventListener(
     }
 )
 
+const diamondSizes = DiamondSizes()
+const jewelryStyles = JewelryStyles()
+const orders = Orders ()
+
 export const KneelDiamonds = () => {
     return `
         <h1>Kneel Diamonds</h1>
