@@ -2,13 +2,18 @@
 import { DiamondSizes } from "./DiamondSizes.js"
 import { JewelryStyles } from "./JewelryStyles.js"
 import { Orders } from "./Orders.js"
-import { Metals} from "./Metals.js"
+import { Metals } from "./Metals.js"
 
 document.addEventListener(
     "click",
     (event) => {
     }
 )
+
+const diamondSizes = DiamondSizes()
+const jewelryStyles = JewelryStyles()
+const orders = Orders ()
+const metals = Metals ()
 
 export const KneelDiamonds = () => {
     return `
@@ -17,7 +22,7 @@ export const KneelDiamonds = () => {
         <article class="choices">
             <section class="choices__metals options">
                 <h2>Metals</h2>
-                ${Metals()}
+                ${metals}
             </section>
             <section class="choices__sizes options">
                 <h2>Sizes</h2>
