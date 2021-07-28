@@ -12,9 +12,9 @@ export const JewelryStyles = () => {
     let html = "<ul>"
 
     // Use .map() for converting objects to <li> elements
-    const listItemsArray = styles.map (style => {
+    const listItemsArray = styles.map(style => {
         return `<li>
-        <input type="radio" name="style" value="${style.id} />" ${style.style}
+        <input type="radio" name="style" value="${style.id}" /> ${style.style}
         </li>`
     })
 
@@ -23,6 +23,7 @@ export const JewelryStyles = () => {
     html += listItemsArray.join("")
 
     html += "</ul>"
+
     return html
 }
 
